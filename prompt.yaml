@@ -10,5 +10,5 @@
     private: true
   tasks:
   - name: using prompt 
-    ansiblebuiltin.debug:
+    ansible.builtin.debug:
       msg: "the user name is {{USERNAME}}, password is {{PASSWORD}}"  
