@@ -1,8 +1,10 @@
 - name: outside the variables file
   hosts: local
   connection: local
-  vars_files:
-    course.yaml
+  vars:
+    course: AWS
+    duration: 120hrs
+    trainer: charan
   tasks:
   - name: print variables
     ansible.builtin.debug:
