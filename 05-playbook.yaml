@@ -1,0 +1,26 @@
+- name: Play1
+  hosts: local
+  connection: local
+  tasks:
+  - name: print sai charan
+    ansible.builtin.debug:
+      msg: "sai charan"
+
+  - name: print rithu
+    ansible.builtin.debug:
+      msg: "rithu"
+
+
+- name: play2
+  hosts: local
+  connection: local
+  tasks:
+  - name: print sunny
+    ansible.builtin.debug:
+      msg: "sunny"
+
+  - name: print manideep bava
+    ansible.builtin.debug:
+      msg: "manideep bava"
+
+   
