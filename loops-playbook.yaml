@@ -4,10 +4,11 @@
   tasks:
   - name: doing loops
     ansible.builtin.package:
-      - name: "{{item}}"
+      - name: "{{ item }}"
         state: installed
 
     loops:
-      nginx
-      sql
+    - nginx
+    - sql
+      
     
