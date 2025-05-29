@@ -1,6 +1,7 @@
 - name: playing loops
-  hosts: localhost
-  connection: localhost
+  hosts: local
+  connection: local
+  become: yes
   tasks:
   - name: doing loops
     ansible.builtin.package:
