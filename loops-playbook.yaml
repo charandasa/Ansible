@@ -7,9 +7,8 @@
     ansible.builtin.package:
       name: "{{ item }}"
       state: installed
-
-    loops:
-      - nginx
-      - sql
+    loop:
+    - nginx
+    - sql
       
     
