@@ -3,12 +3,12 @@
   connection: local
   become: yes
   tasks:
-    - name: doing loops
-      ansible.builtin.package:
-         name: "{{ item }}"
-         state: installed
+  - name: Intsalling packages
+    ansible.builtin.package:
+      name: "{{ item }}"
+      state: installed
 
-      loops:
+    loops:
       - nginx
       - sql
       
