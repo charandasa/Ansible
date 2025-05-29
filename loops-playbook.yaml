@@ -1,0 +1,13 @@
+- name: playing loops
+  hosts: localhost
+  connection: localhost
+  tasks:
+  - name: doing loops
+    ansible.builtin.package:
+      - name: "{{item}}"
+        state: installed
+
+    loops:
+      nginx
+      sql
+    
